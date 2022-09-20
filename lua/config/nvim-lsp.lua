@@ -49,4 +49,5 @@ require('lspconfig').pylsp.setup{
     }
 }
 -- require'lspconfig'.pyright.setup{}
+require'lspconfig'.clangd.setup{}
 vim.cmd [[autocmd BufWritePre *.py lua vim.lsp.buf.format()]]
