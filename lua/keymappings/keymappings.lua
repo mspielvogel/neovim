@@ -70,6 +70,7 @@ vim.cmd([[
     nmap ZC :cclose <CR>
     nmap ZO :copen <CR>
     nmap ZH :windo wincmd H <CR>
+    nmap ZV :source $MYVIMRC <CR>
 ]])
 
 -- Map leader to space
