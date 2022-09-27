@@ -54,7 +54,7 @@ Plug 'mboughaba/i3config.vim'
 " Plug 'liuchengxu/vim-clap'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'glepnir/dashboard-nvim'
+" Plug 'glepnir/dashboard-nvim'
 Plug 'ayu-theme/ayu-vim' 
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'EdenEast/nightfox.nvim'
@@ -81,7 +81,7 @@ Plug 'lewis6991/gitsigns.nvim'
 " Plug 'jghauser/kitty-runner.nvim'
 
 " show indentation
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lukas-reineke/indent-blankline.nvim'
 " show tabs
 " Plug 'akinsho/bufferline.nvim'
@@ -99,6 +99,7 @@ Plug 'sidebar-nvim/sections-dap'
 Plug 'sidebar-nvim/sidebar.nvim'
 " Plug 'romgrk/sidebar.nvim' " not yet merged version to sidebar
 Plug 'preservim/tagbar'
+Plug 'arduino/arduino-language-server'
 
 " Plug 'rafi/vim-venom', {'for': 'python'}
 " List ends here. Plugins become visible to Vim after this call.

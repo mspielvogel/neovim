@@ -49,5 +49,21 @@ require('lspconfig').pylsp.setup{
     }
 }
 -- require'lspconfig'.pyright.setup{}
-require'lspconfig'.clangd.setup{}
+-- require'lspconfig'.clangd.setup{
+--     cmd = {"clangd", "--query-driver=-xc++"}
+-- }
+require'lspconfig'.arduino_language_server.setup {
+    filetypes = {'cpp', 'arduino'},
+
+  cmd = {
+    "arduino-language-server",
+    "-cli-config", "/home/msp/.arduino15/arduino-cli.yaml",
+    "-fqbn", "arduino:avr:uno",
+    "-cli", "arduino-cli",
+    "-clangd", "clangd"
+  }
+}
 vim.cmd [[autocmd BufWritePre *.py lua vim.lsp.buf.format()]]
+vim.cmd [[autocmd BufWritePre *.h lua vim.lsp.buf.format()]]
+vim.cmd [[autocmd BufWritePre *.cpp lua vim.lsp.buf.format()]]
+vim.cmd [[autocmd BufWritePre *.ino lua vim.lsp.buf.format()]]

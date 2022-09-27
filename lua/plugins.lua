@@ -97,6 +97,12 @@ return require('packer').startup(function(use)
 
     -- python plugins
     -- use {'psf/black'}
+    -- use {
+    --     "williamboman/mason.nvim",
+    --     "williamboman/mason-lspconfig.nvim",
+    --     -- "neovim/nvim-lspconfig",
+    -- }
+
     use {'neovim/nvim-lspconfig'}
     
     -- lsp lines
